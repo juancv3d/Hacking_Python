@@ -10,9 +10,11 @@ for port in ports:
     print("this is the banner for this port")
     print(port)
     
-
-    s.connect((ip,port))
-    answer = s.recv(1024)
-    print(answer)
-    s.close
+    try:
+        s.connect((ip,port))
+        answer = s.recv(1024)
+        print(answer)
+        s.close
+    except:
+        print("No answer...")
 
