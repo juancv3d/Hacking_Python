@@ -1,2 +1,3 @@
-hacking python scripts
+#hacking python scripts
+Random scripts to test knowledge
 
